@@ -2,7 +2,9 @@
 
 # <b>Animatable Gaussians</b>: Learning Pose-dependent Gaussian Maps for High-fidelity Human Avatar Modeling
 
-[Zhe Li](https://lizhe00.github.io/), [Zerong Zheng](https://zhengzerong.github.io/), [Lizhen Wang](https://lizhenwangt.github.io/), [Yebin Liu](https://www.liuyebin.com)
+[Zhe Li](https://lizhe00.github.io/)<sup>1</sup>, [Zerong Zheng](https://zhengzerong.github.io/)<sup>2</sup>, [Lizhen Wang](https://lizhenwangt.github.io/)<sup>1</sup>, [Yebin Liu](https://www.liuyebin.com)<sup>1</sup>
+
+<sup>1</sup>Tsinghua Univserity <sup>2</sup>NNKosmos Technology
 
 ### [Projectpage](https://animatable-gaussians.github.io/) · [Paper](https://arxiv.org/pdf/2311.16096.pdf) · [Video](https://www.youtube.com/watch?v=kOmZxD0HxZI)
 
