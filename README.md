@@ -4,7 +4,7 @@
 
 [Zhe Li](https://lizhe00.github.io/), [Zerong Zheng](https://zhengzerong.github.io/), [Lizhen Wang](https://lizhenwangt.github.io/), [Yebin Liu](https://www.liuyebin.com)
 
-### [Projectpage](https://animatable-gaussians.github.io/) · [Paper]() · [Video](https://www.youtube.com/watch?v=kOmZxD0HxZI)
+### [Projectpage](https://animatable-gaussians.github.io/) · [Paper](https://arxiv.org/pdf/2311.16096.pdf) · [Video](https://www.youtube.com/watch?v=kOmZxD0HxZI)
 
 </div>
 
