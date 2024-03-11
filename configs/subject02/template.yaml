@@ -1,0 +1,46 @@
+mode: train
+train:
+  dataset: MvRgbDatasetTHuman4
+  data:
+    subject_name: subject02
+    data_dir: Z:/Data/MultiviewRGB/THuman4/subject02
+    frame_range: &id001
+    - 54
+    - 55
+    - 1
+    used_cam_ids: null
+    mode: nerf
+  net_ckpt_dir: ./results/subject02/template
+  prev_ckpt: null
+  save_init_ckpt: false
+  start_epoch: 0
+  end_epoch: 1001
+  ckpt_interval:
+    epoch: 500
+    batch: 1000
+  eval_interval: 10000
+  depth_guided_sampling:
+    flag: false
+    near_sur_dist: 0.05
+    N_ray_samples: 32
+  compute_grad: true
+  lr:
+    network:
+      type: Step
+      initial: 0.0005
+      interval: 40000
+      factor: 0.9
+      min: 8.0e-05
+  loss_weight:
+    color: 1.0
+    mask: 1.0
+    eikonal: 0.1
+  batch_size: 1
+  num_workers: 0
+model:
+  with_hand: true
+  volume_type: diff
+  use_root_finding: true
+  multires: 6
+  use_viewdir: false
+  multires_viewdir: 3

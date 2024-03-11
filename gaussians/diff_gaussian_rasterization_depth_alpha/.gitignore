@@ -1,0 +1,8 @@
+build/
+diff_gaussian_rasterization_depth_alpha.egg-info/
+dist/
+
+__pycache__
+
+*.so
+*.idea

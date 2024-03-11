@@ -1,0 +1,60 @@
+mode: train
+train:
+  dataset: MvRgbDatasetAvatarReX
+  data:
+    subject_name: avatarrex_lbn1
+    data_dir: Z:/Data/MultiviewRGB/avatarrex/lbn1
+    frame_range: &id001
+    - 1033
+    - 1034
+    - 1
+    used_cam_ids:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 14
+    - 15
+    mode: nerf
+  net_ckpt_dir: ./results/avatarrex_lbn1/template
+  prev_ckpt: null
+  save_init_ckpt: false
+  start_epoch: 0
+  end_epoch: 1000
+  ckpt_interval:
+    epoch: 500
+    batch: 1000
+  eval_interval: 10000
+  depth_guided_sampling:
+    flag: false
+    near_sur_dist: 0.05
+    N_ray_samples: 32
+  compute_grad: true
+  lr:
+    network:
+      type: Step
+      initial: 0.0005
+      interval: 40000
+      factor: 0.9
+      min: 8.0e-05
+  loss_weight:
+    color: 1.0
+    mask: 1.0
+    eikonal: 0.1
+  batch_size: 1
+  num_workers: 0
+model:
+  with_hand: true
+  volume_type: diff
+  use_root_finding: true
+  multires: 6
+  use_viewdir: false
+  multires_viewdir: 3

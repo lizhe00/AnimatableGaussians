@@ -1,0 +1,60 @@
+mode: train
+train:
+  dataset: MvRgbDatasetAvatarReX
+  data:
+    subject_name: avatarrex_lbn2
+    data_dir: Z:/Data/MultiviewRGB/avatarrex/lbn2
+    frame_range: &id001
+    - 0
+    - 1871
+    - 1
+    used_cam_ids: [0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 14, 15]
+    load_smpl_pos_map: true
+  pretrained_dir: null
+  net_ckpt_dir: ./results/avatarrex_lbn2/avatar
+  prev_ckpt: null
+  ckpt_interval:
+    epoch: 10
+    batch: 50000
+  eval_interval: 1000
+  eval_training_ids: [2, 0]
+  eval_testing_ids: [481, 0]
+  eval_img_factor: 1.0
+  lr_init: 0.0005
+  loss_weight:
+    l1: 1.0
+    lpips: 0.1
+    offset: 0.005
+  finetune_color: false
+  batch_size: 1
+  num_workers: 8
+  random_bg_color: true
+test:
+  dataset: MvRgbDatasetAvatarReX
+  data:
+    subject_name: avatarrex_lbn2
+    data_dir: Z:/Data/MultiviewRGB/avatarrex/lbn2
+    frame_range: *id001
+  pose_data:
+#    data_path: Z:/Data/Pose/thuman4/pose_00.npz
+#    frame_range: [2000, 2500]
+#    data_path: Z:/Data/Pose/AMASS/CMU/06/06_13_poses.npz
+#    data_path: Z:/Data/Pose/AMASS/CMU/10/10_05_poses.npz
+    data_path: Z:/Data/Pose/AMASS/MPI_mosh/00093/irish_dance_poses.npz
+    frame_interval: 4
+  view_setting: front
+  render_view_idx: 0
+  global_orient: true
+  img_scale: 1.0
+  save_mesh: false
+  render_skeleton: false
+  save_tex_map: false
+  save_ply: false
+  fix_hand: true
+  fix_hand_id: 431
+  n_pca: 20
+  sigma_pca: 2.0
+  prev_ckpt: ./results/avatarrex_lbn2/avatar/batch_800000
+model:
+  with_viewdirs: true
+  random_style: false

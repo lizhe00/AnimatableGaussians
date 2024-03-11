@@ -1,0 +1,25 @@
+# CMU sub-dataset
+basketball:
+  - ./CMU/06/06_13_poses.npz
+  - ./CMU/06/06_14_poses.npz
+tennis:
+  - ./CMU/02/02_08_poses.npz
+  - ./CMU/02/02_09_poses.npz
+football:
+  - ./CMU/10/10_05_poses.npz
+  - ./CMU/11/11_01_poses.npz
+punch:
+  - ./CMU/15/15_13_poses.npz
+kick:
+  - ./CMU/144/144_05_poses.npz
+others:
+  - ./CMU/144/144_28_poses.npz
+dancing:
+  - ./CMU/131/131_03_poses.npz
+
+# MPI_mosh sub-dataset
+dancing2:
+  - ./MPI_mosh/00059/misc_poses.npz
+  - ./MPI_mosh/00093/irish_dance_poses.npz
+  - ./MPI_mosh/00093/misc_poses.npz
+  - ./MPI_mosh/50004/misc_poses.npz

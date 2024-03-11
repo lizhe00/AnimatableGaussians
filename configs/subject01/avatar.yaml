@@ -1,0 +1,55 @@
+mode: train
+train:
+  dataset: MvRgbDatasetTHuman4
+  data:
+    subject_name: subject01
+    data_dir: Z:/Data/MultiviewRGB/THuman4/subject01
+    frame_range: &id001
+    - 0
+    - 2500
+    - 1
+    used_cam_ids: [0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+    load_smpl_pos_map: true
+  pretrained_dir: null
+  net_ckpt_dir: ./results/subject01/styleunet_gaussians3
+  prev_ckpt: null
+  ckpt_interval:
+    epoch: 10
+    batch: 50000
+  eval_interval: 1000
+  eval_training_ids: [542, 15]
+  eval_testing_ids: [542, 18]
+  eval_img_factor: 1.0
+  lr_init: 0.0005
+  loss_weight:
+    l1: 1.0
+    lpips: 0.1
+    offset: 0.005
+  finetune_color: false
+  batch_size: 1
+  num_workers: 8
+  random_bg_color: true
+test:
+  dataset: MvRgbDatasetTHuman4
+  data:
+    data_dir: Z:/Data/MultiviewRGB/THuman4/subject01
+    frame_range: [2000, 2500]
+    subject_name: subject01
+  pose_data:
+    data_path: Z:/Data/Pose/thuman4/pose_00.npz
+    frame_range: [2000, 2500]
+    hand_pose_type: fist
+  view_setting: free
+  render_view_idx: 6
+  global_orient: false
+  img_scale: 1.0
+  save_mesh: false
+  render_skeleton: false
+  save_tex_map: false
+  save_ply: false
+  n_pca: 20
+  sigma_pca: 2.0
+  prev_ckpt: ./results/subject01/avatar/batch_800000
+model:
+  with_viewdirs: true
+  random_style: false

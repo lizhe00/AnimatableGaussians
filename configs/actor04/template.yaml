@@ -1,0 +1,46 @@
+mode: train
+train:
+  dataset: MvRgbDatasetAvatarReX
+  data:
+    subject_name: actor04
+    data_dir: Z:/Data/MultiviewRGB/ActorsHQ/Actor04/Sequence1
+    frame_range:
+      - 294
+      - 295
+      - 1
+    used_cam_ids: [4, 5, 6, 7, 20, 21, 22, 23, 36, 37, 38, 39, 52, 53, 54, 55, 76, 77, 78, 79, 92, 93, 94, 95, 108, 109, 110, 111, 125, 126, 127, 130, 131, 134, 135, 138, 139, 142, 143, 146, 147, 150, 151, 154, 155, 158, 159]
+    mode: nerf
+  net_ckpt_dir: ./results/actor04/template
+  prev_ckpt: null
+  save_init_ckpt: false
+  start_epoch: 0
+  end_epoch: 1001
+  ckpt_interval:
+    epoch: 500
+    batch: 1000
+  eval_interval: 10000
+  depth_guided_sampling:
+    flag: false
+    near_sur_dist: 0.05
+    N_ray_samples: 32
+  compute_grad: true
+  lr:
+    network:
+      type: Step
+      initial: 0.0005
+      interval: 40000
+      factor: 0.9
+      min: 8.0e-05
+  loss_weight:
+    color: 1.0
+    mask: 1.0
+    eikonal: 0.1
+  batch_size: 1
+  num_workers: 0
+model:
+  with_hand: true
+  volume_type: diff
+  use_root_finding: true
+  multires: 6
+  use_viewdir: false
+  multires_viewdir: 3
