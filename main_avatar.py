@@ -794,20 +794,6 @@ class AvatarTrainer:
         print('Loading networks from ', path + '/net.pt')
         net_dict = torch.load(path + '/net.pt')
         if 'avatar_net' in net_dict:
-            if 'front_viewdir_net.0.weight' in net_dict['avatar_net']:
-                net_dict['avatar_net']['viewdir_net.0.weight'] = net_dict['avatar_net']['front_viewdir_net.0.weight']
-                net_dict['avatar_net']['viewdir_net.0.bias'] = net_dict['avatar_net']['front_viewdir_net.0.bias']
-                net_dict['avatar_net']['viewdir_net.2.weight'] = net_dict['avatar_net']['front_viewdir_net.2.weight']
-                net_dict['avatar_net']['viewdir_net.2.bias'] = net_dict['avatar_net']['front_viewdir_net.2.bias']
-                del net_dict['avatar_net']['front_viewdir_net.0.weight']
-                del net_dict['avatar_net']['front_viewdir_net.0.bias']
-                del net_dict['avatar_net']['front_viewdir_net.2.weight']
-                del net_dict['avatar_net']['front_viewdir_net.2.bias']
-                del net_dict['avatar_net']['back_viewdir_net.0.weight']
-                del net_dict['avatar_net']['back_viewdir_net.0.bias']
-                del net_dict['avatar_net']['back_viewdir_net.2.weight']
-                del net_dict['avatar_net']['back_viewdir_net.2.bias']
-                torch.save(net_dict, path + '/net.pt')
             self.avatar_net.load_state_dict(net_dict['avatar_net'])
         else:
             print('[WARNING] Cannot find "avatar_net" from the network checkpoint!')
