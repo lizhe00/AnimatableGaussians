@@ -1,5 +1,5 @@
 glfw==2.4.0
-igl==2.2.1
+libigl
 joblib==0.17.0
 numpy==1.21.6
 opencv-python==4.5.5.64
@@ -7,7 +7,7 @@ plyfile==1.0.2
 PyOpenGL==3.1.0
 pyrender==0.1.45
 pytorch3d==0.7.4
-PyYAML==6.0.1
+pyyaml==5.3.1
 scikit-image==0.17.2
 scikit-learn==0.23.2
 screeninfo==0.8.1
