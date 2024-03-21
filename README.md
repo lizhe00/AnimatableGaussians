@@ -61,7 +61,7 @@ cd network/styleunet
 python setup.py install
 cd ../..
 ```
-2. Download [SMPL-X](https://smpl-x.is.tue.mpg.de/) model, and place pkl files to ```./smpl_files/smplx```.
+2. Download [SMPL-X](https://smpl-x.is.tue.mpg.de/download.php) model, and place pkl files to ```./smpl_files/smplx```.
 
 # Data Preparation
 ## AvatarReX, ActorsHQ or THuman4.0 Dataset
@@ -106,7 +106,7 @@ Our code is based on these wonderful repos:
 # Citation
 If you find our code or data is helpful to your research, please consider citing our paper.
 ```bibtex
-@inproceedings{li2023animatablegaussians,
+@inproceedings{li2024animatablegaussians,
   title={Animatable Gaussians: Learning Pose-dependent Gaussian Maps for High-fidelity Human Avatar Modeling},
   author={Li, Zhe and Zheng, Zerong and Wang, Lizhen and Liu, Yebin},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
