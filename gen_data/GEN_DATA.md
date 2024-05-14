@@ -26,8 +26,14 @@ cd ./utils/root_finding
 python setup.py install
 cd ../..
 ```
-* Generate a canonical LBS weight volume. Download [AdaptiveSolvers.x64.zip](https://www.cs.jhu.edu/~misha/Code/PoissonRecon/Version16.01/AdaptiveSolvers.x64.zip) and extract ```PointInterpolant.exe``` to ```./bins```.
-This step is required to be conducted on Windows.
+* Generate a canonical LBS weight volume. 
+    * **For Windows**: Download [AdaptiveSolvers.x64.zip](https://www.cs.jhu.edu/~misha/Code/PoissonRecon/Version16.01/AdaptiveSolvers.x64.zip) and extract ```PointInterpolant.exe``` to ```./bins```
+    * **For Linux**:
+        * Clone [Adaptive Multigrid Solvers (Version 16.04)](https://github.com/mkazhdan/PoissonRecon.git) to directory of your choice 
+        * ```cd path/to/cloned/repo```
+        * ```make pointinterpolant```
+        * The resulting executable file is at ```path/to/cloned/repo/Bin/Linux/PointInterpolant```. Copy it to ```./bins``` (you may need to do ```mkdir ./bins``` beforehand)
+        * Go to ```./gen_data/gen_weight_volume.py line 115```, change ```solve(smpl_model.lbs_weights.shape[-1], ".\\bins\\PointInterpolant.exe")``` to ```solve(smpl_model.lbs_weights.shape[-1], "./bins/PointInterpolant")```. (This is the resulting executable file we previously made.)
 ```
 python -m gen_data.gen_weight_volume -c configs/***/template.yaml
 ```
