@@ -1,4 +1,5 @@
 News
+- `05/22/2024` :loudspeaker: <font color='magenta'><b> An extension work of Animatable Gaussians for human avatar relighting is available at [here](https://animatable-gaussians.github.io/relight). Welcome to check it!</b></font>
 - `03/11/2024` The code has been released. Welcome to have a try!
 - `03/11/2024` [AvatarReX](AVATARREX_DATASET.md) dataset, a high-resolution multi-view video dataset for avatar modeling, has been released.
 - `02/27/2024` Animatable Gaussians is accepted by CVPR 2024!
