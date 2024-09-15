@@ -1,5 +1,6 @@
 News
-- `05/22/2024` :loudspeaker: <font color='magenta'><b> An extension work of Animatable Gaussians for human avatar relighting is available at [here](https://animatable-gaussians.github.io/relight). Welcome to check it!</b></font>
+- `09/15/2024` Release the [templates](https://github.com/user-attachments/files/17004283/ActorsHQ_templates.zip) of ActorsHQ (Actor01 & Actor04) to facilitate training.
+- `05/22/2024` :loudspeaker: <font color='magenta'><b> An extension work of Animatable Gaussians for human avatar relighting is available [here](https://animatable-gaussians.github.io/relight). Welcome to check it!</b></font>
 - `03/11/2024` The code has been released. Welcome to have a try!
 - `03/11/2024` [AvatarReX](AVATARREX_DATASET.md) dataset, a high-resolution multi-view video dataset for avatar modeling, has been released.
 - `02/27/2024` Animatable Gaussians is accepted by CVPR 2024!
@@ -7,7 +8,7 @@ News
 Todo
 - [x] Release the code.
 - [x] Release AvatarReX dataset.
-- [ ] Release all the checkpoints and preprocessed dataset.
+- [ ] (Cancelled due to graduation. Please run on other cases yourself with the provided [configs](configs).) Release all the checkpoints and preprocessed dataset.
 
 <div align="center">
 

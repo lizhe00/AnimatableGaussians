@@ -41,8 +41,10 @@ Character
 
 ## ActorsHQ Dataset
 
-Stay tuned.
+Templates are released [here](https://github.com/user-attachments/files/17004283/ActorsHQ_templates.zip).
+
+<p><del>Stay tuned.</del> Cancelled due to graduation.</p>
 
 ## THuman4.0 Dataset
 
-Stay tuned.
+<p><del>Stay tuned.</del> Cancelled due to graduation.</p>

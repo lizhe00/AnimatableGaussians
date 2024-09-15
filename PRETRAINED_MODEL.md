@@ -41,8 +41,8 @@ Character
 
 ## ActorsHQ Dataset
 
-Stay tuned.
+<p><del>Stay tuned.</del> Cancelled due to graduation.</p>
 
 ## THuman4.0 Dataset
 
-Stay tuned.
+<p><del>Stay tuned.</del> Cancelled due to graduation.</p>
