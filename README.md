@@ -8,7 +8,7 @@ News
 Todo
 - [x] Release the code.
 - [x] Release AvatarReX dataset.
-- [ ] <p><del>Release all the checkpoints and preprocessed dataset.</del> Cancelled due to graduation. Please run on other cases yourself with the provided [configs](configs).</p>
+- [ ] <del>Release all the checkpoints and preprocessed dataset.</del> Cancelled due to graduation. Please run on other cases yourself with the provided [configs](configs).
 
 <div align="center">
 
