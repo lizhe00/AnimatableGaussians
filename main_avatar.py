@@ -540,6 +540,8 @@ class AvatarTrainer:
             dataset_name = 'training'
             seq_name = ''
 
+            self.opt['test']['n_pca'] = -1  # cancel PCA for training pose reconstruction
+
         self.dataset = testing_dataset
         iter_idx = self.load_ckpt(self.opt['test']['prev_ckpt'], False)[1]
 
