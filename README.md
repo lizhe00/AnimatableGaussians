@@ -1,14 +1,16 @@
+# Recruitment from 2012 Labs of Huawei
+- **Who are we?** Our team is the CG & 3DV center of Huawei. We are working for bringing the 3D digital world to everyone.
+- **What are we doing?** Our main research lies on human-centric 3D/4D reconstruction, animation, simulation and generation.
+- **Who are we looking for?** Everyone (mainly students) working on 3D vision and graphics, looking at this repo :)
+- Homepage of the contact: [李哲](https://lizhe00.github.io/). Welcome to chat!
+- Wechat: nexus_unite, E-mail: lizhe_thu[AT]126.com
+
 News
 - `09/15/2024` Release the [templates](https://github.com/user-attachments/files/17004283/ActorsHQ_templates.zip) of ActorsHQ (Actor01 & Actor04) to facilitate training.
 - `05/22/2024` :loudspeaker: <font color='magenta'><b> An extension work of Animatable Gaussians for human avatar relighting is available [here](https://animatable-gaussians.github.io/relight). Welcome to check it!</b></font>
 - `03/11/2024` The code has been released. Welcome to have a try!
 - `03/11/2024` [AvatarReX](AVATARREX_DATASET.md) dataset, a high-resolution multi-view video dataset for avatar modeling, has been released.
 - `02/27/2024` Animatable Gaussians is accepted by CVPR 2024!
-
-Todo
-- [x] Release the code.
-- [x] Release AvatarReX dataset.
-- [ ] <del>Release all the checkpoints and preprocessed dataset.</del> Cancelled due to graduation. Please run on other cases yourself with the provided [configs](configs).
 
 <div align="center">
 
@@ -99,6 +101,12 @@ https://github.com/lizhe00/AnimatableGaussians/assets/61936670/5aad39d2-2adb-4b7
 
 # Evaluation
 We provide evaluation metrics and example codes of comparison with body-only avatars in [eval/comparison_body_only_avatars.py](eval/comparison_body_only_avatars.py).
+
+# Todo
+- [x] Release the code.
+- [x] Release AvatarReX dataset.
+- [ ] <del>Release all the checkpoints and preprocessed dataset.</del> Cancelled due to graduation. Please run on other cases yourself with the provided [configs](configs).
+
 
 # Acknowledgement
 Our code is based on these wonderful repos:
