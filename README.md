@@ -1,10 +1,3 @@
-# Recruitment from 2012 Labs of Huawei
-- **Who are we?** Our team is the CG & 3DV center of Huawei. We are working for bringing the 3D digital world to everyone.
-- **What are we doing?** Our main research lies on human-centric 3D/4D reconstruction, animation, simulation and generation.
-- **Who are we looking for?** Everyone (mainly students) working on 3D vision and graphics, looking at this repo :)
-- Homepage of the contact: [李哲](https://lizhe00.github.io/). Welcome to chat!
-- Wechat: nexus_unite, E-mail: lizhe_thu[AT]126.com
-
 News
 - `09/15/2024` Release the [templates](https://github.com/user-attachments/files/17004283/ActorsHQ_templates.zip) of ActorsHQ (Actor01 & Actor04) to facilitate training.
 - `05/22/2024` :loudspeaker: <font color='magenta'><b> An extension work of Animatable Gaussians for human avatar relighting is available [here](https://animatable-gaussians.github.io/relight). Welcome to check it!</b></font>
